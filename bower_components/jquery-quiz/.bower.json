@@ -1,0 +1,31 @@
+{
+  "name": "jquery-quiz",
+  "authors": [
+    "JC Hamill <jchamill@creativeshampoo.com"
+  ],
+  "description": "A simple jQuery quiz plugin.",
+  "main": [
+    "dist/jquery.quiz.js",
+    "dist/jquery.quiz.css"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": ">=1.6"
+  },
+  "ignore": [
+    "**/.*",
+    "demo",
+    "node_modules"
+  ],
+  "homepage": "https://github.com/jchamill/jquery-quiz",
+  "_release": "d232385722",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d232385722b13c344610523291495d53ca760086"
+  },
+  "_source": "https://github.com/jchamill/jquery-quiz.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/jchamill/jquery-quiz.git",
+  "_direct": true
+}

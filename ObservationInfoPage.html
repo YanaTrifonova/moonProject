@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Exploration of the Moon: a History</title>
+    <link href="Style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="ObservationSearch.js"></script>
+</head>
+<body class="defBody">
+
+<div class="header">
+    <h1>Exploration of the Moon</h1>
+    <p>Moon Missions. Space Race and Moon landing.</p>
+</div>
+
+<div class="navigationBar">
+    <a href="Characteristic.html">Characteristics</a>
+    <a href="History.html">History</a>
+    <a href="ObservationStartPage.html" class="current">Observation</a>
+    <a href="little_quiz.html">Quiz</a>
+    <a href="infoPage.html">Back to the info page</a>
+</div>
+
+<h2 class="searchEngine">Search engine for articles.</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">
+
+<table class="tableStyle" id="myTable">
+    <tr>
+        <th class="row1" onclick="sortFunction(0)">#</th>
+        <th class="row2" onclick="sortFunction(1)">Artificial object</th>
+        <th class="row3" onclick="sortFunction(2)">Nationality</th>
+        <th class="row4" onclick="sortFunction(3)">Year</th>
+        <th class="row5" onclick="sortFunction(4)">Notes</th>
+        <th class="row6" onclick="sortFunction(5)">Status</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="left">Luna  2</td>
+        <td>Soviet Union</td>
+        <td>1959</td>
+        <td class="left">The world's first automatic interplanetary station, reaching the surface of the moon.</td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td class="left">Unit “E” of Vostok-L carrier rocket</td>
+        <td>Soviet Union</td>
+        <td>1959</td>
+        <td class="left">Used when breeding "Luna-2", fell 30 minutes after Luna-2.</td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td class="left">Ranger-4</td>
+        <td>USA</td>
+        <td>1962</td>
+        <td class="left">The goal of the Ranger program is to transfer images when approaching before a collision with the Moon.
+            Ranger 4 fell to the moon, but did not complete the task.
+        </td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td class="left">Ranger-6</td>
+        <td>USA</td>
+        <td>1964</td>
+        <td class="left">He fell to the moon, but did not complete the task.</td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td class="left">Ranger-7</td>
+        <td>USA</td>
+        <td>1964</td>
+        <td class="left">Before the fall, the device transmitted 4300 photographs to Earth.</td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td class="left">Ranger-8</td>
+        <td>USA</td>
+        <td>1965</td>
+        <td class="left">Before the fall, the device transmitted 7300 photographs to Earth.</td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td class="left">Ranger-9</td>
+        <td>USA</td>
+        <td>1965</td>
+        <td class="left">Before the fall, the device transmitted 5800 photographs to Earth, which were shown live on American
+            television.
+        </td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td class="left">Luna  5</td>
+        <td>Soviet Union</td>
+        <td>1965</td>
+        <td class="left">Soft landing failed.</td>
+        <td class="left">Crashed</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td class="left">Luna  7</td>
+        <td>Soviet Union</td>
+        <td>1965</td>
+        <td class="left">Soft landing failed. The station was unable to extinguish the speed and crashed into the lunar surface.</td>
+        <td class="left">Crashed</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td class="left">Luna  8</td>
+        <td>Soviet Union</td>
+        <td>1965</td>
+        <td class="left">Due to a malfunction, the apparatus crashed on the surface of the moon.</td>
+        <td class="left">Crashed</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td class="left">Luna  9</td>
+        <td>Soviet Union</td>
+        <td>1966</td>
+        <td class="left">The first ever soft landing on the surface of the moon.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td class="left">Luna 10</td>
+        <td>Soviet Union</td>
+        <td>1966</td>
+        <td class="left">The Luna-10 station is the world's first artificial satellite of the Moon. May 29 fell on the surface of the
+            moon.
+        </td>
+        <td class="left">Crashed (post-mission)</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td class="left">Surveyor-1</td>
+        <td>USA</td>
+        <td>1966</td>
+        <td class="left">Following the Soviet Union, the United States carried out a soft landing on the moon.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td class="left">Surveyor-2</td>
+        <td>USA</td>
+        <td>1966</td>
+        <td class="left">Due to a malfunction, the apparatus fell on the surface of the moon.</td>
+        <td class="left">Crashed</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td class="left">Lunar orbiter-1</td>
+        <td>USA</td>
+        <td>1966</td>
+        <td class="left">Orbiter.</td>
+        <td class="left">Crashed (post-mission)</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td class="left">Luna 11</td>
+        <td>Soviet Union</td>
+        <td>1966</td>
+        <td class="left">Orbiter.</td>
+        <td class="left">Crashed</td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td class="left">Luna 13</td>
+        <td>Soviet Union</td>
+        <td>1966</td>
+        <td class="left">Made a soft landing on the surface of the moon.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td class="left">Luna 12</td>
+        <td>Soviet Union</td>
+        <td>1967</td>
+        <td class="left">AMC "Luna-12" fell on the surface of the moon.</td>
+        <td class="left">Crashed</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td class="left">Surveyor-3</td>
+        <td>USA</td>
+        <td>1967</td>
+        <td class="left">The crew of the Apollo-12 surveyed the Surveyor-3, dismantled some of its parts and delivered to study to
+            Earth.
+        </td>
+        <td class="left">Landed (portions recovered by Apollo 12 crew)</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td class="left">Surveyor-4</td>
+        <td>USA</td>
+        <td>1967</td>
+        <td class="left">Due to a malfunction, the apparatus fell on the surface of the moon.</td>
+        <td class="left">Crashed</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td class="left">Surveyor-5</td>
+        <td>USA</td>
+        <td>1967</td>
+        <td class="left">Transmitted to Earth 19,000 photographs, data and soil analysis.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td class="left">Surveyor-6</td>
+        <td>USA</td>
+        <td>1967</td>
+        <td class="left">Transmitted to Earth 19,000 photographs, data and soil analysis.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td class="left">Surveyor-7</td>
+        <td>USA</td>
+        <td>1968</td>
+        <td class="left">Transmitted to Earth 19,000 photographs, data and soil analysis.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td class="left">Luna 14</td>
+        <td>Soviet Union</td>
+        <td>1968</td>
+        <td class="left">Experiments conducted at the station, allowed us to make the final choice of materials for sealing wheel
+            drives, as well as bearings for the chassis of the " Lunokhod ".
+        </td>
+        <td class="left">Crashed</td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td class="left">Apollo 10 LM-4 Snoopy descent stage</td>
+        <td>USA</td>
+        <td>1969</td>
+        <td class="left">The astronauts performed a maneuver in a selenocentric orbit and inspected the selected landing site of the
+            next expedition. De-orbit, landing did not commit.
+        </td>
+        <td class="left">Crashed (post-mission)</td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td class="left">Luna 15</td>
+        <td>Soviet Union</td>
+        <td>1969</td>
+        <td class="left">The flight program of the station "Luna-15" - delivery of samples of lunar soil to Earth - was not
+            implemented.
+        </td>
+        <td class="left">Crashed</td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td class="left">Apollo 11 LM-5 Eagle descent stage</td>
+        <td>USA</td>
+        <td>1969</td>
+        <td class="left">Was the spaceflight that landed the first two people on the Moon.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td class="left">Apollo 12 LM-6 Intrepid descent stage</td>
+        <td>USA</td>
+        <td>1969</td>
+        <td class="left">Samples of lunar soil were delivered to Earth.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>29</td>
+        <td class="left">Luna 16 descent stage</td>
+        <td>Soviet Union</td>
+        <td>1970</td>
+        <td class="left">Soviet automatic interplanetary station for the study of the Moon and outer space.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td class="left">Luna 17 and Lunokhod 1</td>
+        <td>Soviet Union</td>
+        <td>1970</td>
+        <td class="left">The world's first rover, successfully working on the surface of another celestial body.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td class="left">Luna 18</td>
+        <td>Soviet Union</td>
+        <td>1971</td>
+        <td class="left">Soft landing was not possible, the station crashed.</td>
+        <td class="left">Crashed</td>
+    </tr>
+    <tr>
+        <td>32</td>
+        <td class="left">Luna 19</td>
+        <td>Soviet Union</td>
+        <td>1971</td>
+        <td class="left">Soviet automatic interplanetary station (AMC) to study the moon and outer space.</td>
+        <td class="left">Crashed</td>
+    </tr>
+    <tr>
+        <td>33</td>
+        <td class="left">Apollo 15 Lunar Roving Vehicle (LRV-1)</td>
+        <td>USA</td>
+        <td>1971</td>
+        <td class="left">It was an electric car with two disposable batteries.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>34</td>
+        <td class="left">Luna 20 descent stage</td>
+        <td>Soviet Union</td>
+        <td>1972</td>
+        <td class="left">On the ground delivered a column of lunar soil weighing 55 grams.</td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>35</td>
+        <td class="left">Apollo 16 Lunar Roving Vehicle (LRV-2)</td>
+        <td>USA</td>
+        <td>1972</td>
+        <td class="left">the tenth manned mission in the United States Apollo space program, the fifth and penultimate to land on the
+            Moon and the first to land in the lunar highlands.
+        </td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>36</td>
+        <td class="left">Apollo 17 Lunar Roving Vehicle (LRV-3)</td>
+        <td>USA</td>
+        <td>1972</td>
+        <td class="left">The final mission of NASA's Apollo program and the last mission in which humans traveled to and walked on
+            the Moon.
+        </td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>37</td>
+        <td class="left">Luna 21 and Lunokhod 2</td>
+        <td>Soviet Union</td>
+        <td>1973</td>
+        <td class="left">During the four months of work, I traveled 37 kilometers, transmitted 86 panoramas to Earth and about 80,000
+            frames of television shooting.
+        </td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>38</td>
+        <td class="left">Luna 24 descent stage</td>
+        <td>Soviet Union</td>
+        <td>1976</td>
+        <td class="left">A column of lunar soil about 160 centimeters long and weighing 170 grams was delivered to Earth. Last soil
+            test.
+        </td>
+        <td class="left">Landed</td>
+    </tr>
+    <tr>
+        <td>39</td>
+        <td class="left">Hagoromo / Hiten</td>
+        <td>Japan</td>
+        <td>1990</td>
+        <td class="left">The first Japanese artificial satellite of the moon. Dropped out of orbit.</td>
+        <td class="left">Crashed (orbit / crash not confirmed)</td>
+    </tr>
+    <tr>
+        <td>40</td>
+        <td class="left">Moon Impact Probe (MIP) / Chandrayaan-1</td>
+        <td>India</td>
+        <td>2008</td>
+        <td class="left">On November 14, the lunar shock probe undocked from Chandrayaan-1, which made a hard landing at 15:01 UTC
+            near the Shackleton crater, located near the south pole of the Moon.
+        </td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+    <tr>
+        <td>41</td>
+        <td class="left">Chang'e 1</td>
+        <td>China</td>
+        <td>2009</td>
+        <td class="left">A robotic spacecraft</td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+    <tr>
+        <td>42</td>
+        <td class="left">LCROSS Shepherding Spacecraft</td>
+        <td>USA</td>
+        <td>2009</td>
+        <td class="left">Lunar Crater Observation and Sensing Satellite (LCROSS) was a robotic spacecraft operated by NASA. The
+            mission was conceived as a low-cost means of determining the nature of hydrogen detected at the polar
+            regions of the Moon.
+        </td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+    <tr>
+        <td>43</td>
+        <td class="left">LCROSS Centaur</td>
+        <td>USA</td>
+        <td>2009</td>
+        <td class="left">A spacecraft for observing and probing lunar craters, de-orbited.</td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+    <tr>
+        <td>44</td>
+        <td class="left">GRAIL</td>
+        <td>USA</td>
+        <td>2012</td>
+        <td class="left">An American lunar science mission in NASA's Discovery Program which used high-quality gravitational field
+            mapping of the Moon to determine its interior structure.
+        </td>
+        <td class="left">Crashed (post-mission)</td>
+    </tr>
+    <tr>
+        <td>45</td>
+        <td class="left">Chang'e 3 and Yutu</td>
+        <td>China</td>
+        <td>2013</td>
+        <td class="left">The automatic interplanetary station "Chang'e-3" delivered to the moon a self-propelled apparatus "Yuytu".
+        </td>
+        <td class="left">Rover ceased transmission March 2015. Lander operational as of June 2018</td>
+    </tr>
+    <tr>
+        <td>46</td>
+        <td class="left">LADEE</td>
+        <td>USA</td>
+        <td>2014</td>
+        <td class="left">LADEE orbited around the Moon's equator, using its instruments to study the lunar exosphere and dust in the
+            Moon's vicinity.
+        </td>
+        <td class="left">Intentionally crashed</td>
+    </tr>
+
+
+</table>
+</body>
+</html>
